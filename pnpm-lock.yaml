@@ -10,7 +10,7 @@ importers:
     dependencies:
       umi:
         specifier: ^4.6.31
-        version: 4.6.31(@babel/core@7.29.0)(@types/node@25.3.5)(@types/react@18.3.28)(eslint@8.57.1)(lightningcss@1.22.1)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(resolve-url-loader@5.0.0)(rollup@3.30.0)(sass@1.54.0)(stylelint@14.16.1)(terser@5.46.0)(type-fest@0.20.2)(typescript@5.9.3)(webpack@5.105.4)
+        version: 4.6.31(@babel/core@7.29.0)(@types/node@25.3.5)(@types/react@18.3.28)(eslint@8.57.1)(lightningcss@1.22.1)(prettier@3.8.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(resolve-url-loader@5.0.0)(rollup@3.30.0)(sass@1.54.0)(stylelint@14.16.1)(terser@5.46.0)(type-fest@0.20.2)(typescript@5.9.3)(webpack@5.105.4)
     devDependencies:
       '@types/react':
         specifier: ^18.0.33
@@ -18,6 +18,12 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.11
         version: 18.3.7(@types/react@18.3.28)
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
+      prettier-plugin-package:
+        specifier: ^2.0.0
+        version: 2.0.0(prettier@3.8.3)
       typescript:
         specifier: ^5.0.3
         version: 5.9.3
@@ -3995,6 +4001,12 @@ packages:
       '@volar/vue-typescript':
         optional: true
 
+  prettier-plugin-package@2.0.0:
+    resolution: {integrity: sha512-d7v5sEUf9AIBYmsjn6kzy9xugvoutgk+pdt1/l3opACE5uHS30LzApezcoHYqDJtvcSPj8SCY/50WIiVYmH3+Q==}
+    engines: {node: '>=20.19.0'}
+    peerDependencies:
+      prettier: ^3.0.0
+
   prettier-plugin-packagejson@2.4.3:
     resolution: {integrity: sha512-kPeeviJiwy0BgOSk7No8NmzzXfW4R9FYWni6ziA5zc1kGVVrKnBzMZdu2TUhI+I7h8/5Htt3vARYOk7KKJTTNQ==}
     peerDependencies:
@@ -4003,8 +4015,8 @@ packages:
       prettier:
         optional: true
 
-  prettier@3.8.1:
-    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -9601,19 +9613,23 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-organize-imports@3.2.4(prettier@3.8.1)(typescript@5.9.3):
+  prettier-plugin-organize-imports@3.2.4(prettier@3.8.3)(typescript@5.9.3):
     dependencies:
-      prettier: 3.8.1
+      prettier: 3.8.3
       typescript: 5.9.3
 
-  prettier-plugin-packagejson@2.4.3(prettier@3.8.1):
+  prettier-plugin-package@2.0.0(prettier@3.8.3):
+    dependencies:
+      prettier: 3.8.3
+
+  prettier-plugin-packagejson@2.4.3(prettier@3.8.3):
     dependencies:
       sort-package-json: 2.4.1
       synckit: 0.8.5
     optionalDependencies:
-      prettier: 3.8.1
+      prettier: 3.8.3
 
-  prettier@3.8.1: {}
+  prettier@3.8.3: {}
 
   pretty-error@4.0.0:
     dependencies:
@@ -10514,7 +10530,7 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  umi@4.6.31(@babel/core@7.29.0)(@types/node@25.3.5)(@types/react@18.3.28)(eslint@8.57.1)(lightningcss@1.22.1)(prettier@3.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(resolve-url-loader@5.0.0)(rollup@3.30.0)(sass@1.54.0)(stylelint@14.16.1)(terser@5.46.0)(type-fest@0.20.2)(typescript@5.9.3)(webpack@5.105.4):
+  umi@4.6.31(@babel/core@7.29.0)(@types/node@25.3.5)(@types/react@18.3.28)(eslint@8.57.1)(lightningcss@1.22.1)(prettier@3.8.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(resolve-url-loader@5.0.0)(rollup@3.30.0)(sass@1.54.0)(stylelint@14.16.1)(terser@5.46.0)(type-fest@0.20.2)(typescript@5.9.3)(webpack@5.105.4):
     dependencies:
       '@babel/runtime': 7.23.6
       '@umijs/bundler-utils': 4.6.31
@@ -10526,8 +10542,8 @@ snapshots:
       '@umijs/server': 4.6.31
       '@umijs/test': 4.6.31(@babel/core@7.29.0)
       '@umijs/utils': 4.6.31
-      prettier-plugin-organize-imports: 3.2.4(prettier@3.8.1)(typescript@5.9.3)
-      prettier-plugin-packagejson: 2.4.3(prettier@3.8.1)
+      prettier-plugin-organize-imports: 3.2.4(prettier@3.8.3)(typescript@5.9.3)
+      prettier-plugin-packagejson: 2.4.3(prettier@3.8.3)
     transitivePeerDependencies:
       - '@babel/core'
       - '@rspack/core'
