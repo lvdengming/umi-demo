@@ -2,7 +2,7 @@
  * @Author: lvdengming@foxmail.com
  * @Date: 2026-05-19 07:02:16
  * @LastEditors: lvdengming@foxmail.com
- * @LastEditTime: 2026-05-24 00:21:51
+ * @LastEditTime: 2026-05-24 00:54:16
 -->
 
 # umi-demo
@@ -33,7 +33,7 @@
 
 [https://github.com/lvdengming/umi-demo/tree/master/src/cases/04_useReducer](https://github.com/lvdengming/umi-demo/tree/master/src/cases/04_useReducer)
 
-### 05_useCallback_useMemo - 性能优化
+### 05_useCallback 与 useMemo - 性能优化
 
 避免不必要的子组件重渲染和复杂计算。
 
@@ -44,6 +44,12 @@
 不触发重渲染，常用于访问 DOM 元素、保存定时器 ID、前一个状态值。
 
 [https://github.com/lvdengming/umi-demo/tree/master/src/cases/06_useRef](https://github.com/lvdengming/umi-demo/tree/master/src/cases/06_useRef)
+
+### 07\_自定义 Hook - 封装复用逻辑
+
+将组件逻辑提取为可复用的函数。实现一个 useLocalStorage Hook。
+
+[https://github.com/lvdengming/umi-demo/tree/master/src/cases/07_customHook](https://github.com/lvdengming/umi-demo/tree/master/src/cases/07_customHook)
 
 ## 参考
 

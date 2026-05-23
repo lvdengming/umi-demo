@@ -1,21 +1,11 @@
-import { Link, Outlet } from 'umi';
-import styles from './index.less';
+/*
+ * @Author: lvdengming@foxmail.com
+ * @Date: 2026-05-18 22:32:35
+ * @LastEditors: lvdengming@foxmail.com
+ * @LastEditTime: 2026-05-24 01:20:33
+ */
+import { Outlet } from 'umi';
 
 export default function Layout() {
-  return (
-    <div className={styles.navs}>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/docs">Docs</Link>
-        </li>
-        <li>
-          <a href="https://github.com/umijs/umi">Github</a>
-        </li>
-      </ul>
-      <Outlet />
-    </div>
-  );
+  return <Outlet />;
 }
