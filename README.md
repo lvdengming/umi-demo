@@ -2,7 +2,7 @@
  * @Author: lvdengming@foxmail.com
  * @Date: 2026-05-19 07:02:16
  * @LastEditors: lvdengming@foxmail.com
- * @LastEditTime: 2026-05-23 21:18:59
+ * @LastEditTime: 2026-05-24 00:21:51
 -->
 
 # umi-demo
@@ -38,6 +38,12 @@
 避免不必要的子组件重渲染和复杂计算。
 
 [https://github.com/lvdengming/umi-demo/tree/master/src/cases/05_useCallback_useMemo](https://github.com/lvdengming/umi-demo/tree/master/src/cases/05_useCallback_useMemo)
+
+### 06_useRef - 引用 DOM 或保存可变值
+
+不触发重渲染，常用于访问 DOM 元素、保存定时器 ID、前一个状态值。
+
+[https://github.com/lvdengming/umi-demo/tree/master/src/cases/06_useRef](https://github.com/lvdengming/umi-demo/tree/master/src/cases/06_useRef)
 
 ## 参考
 
